@@ -1,0 +1,600 @@
+/* #region Body */ 
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: #333;
+}
+/* #endregion */
+
+
+/* #region Header */
+header {
+    /* background-image: url('TFSQ.gif');  */
+    background-size: cover;       
+    background-position: center;  
+    color: white;                 
+    padding: 4rem 1rem;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.5rem;
+}
+
+#home h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+#home h2 {
+    font-size: 20px;
+    font-weight: 100;
+    margin: 10;
+}
+
+.cursor {
+    width: 1ch; /* Match the width of one character */
+    height: 1em; /* Match the height of the text */
+    background-color: white; /* Set the color for the block */
+    display: inline-block;
+    animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; } /* The cursor will disappear for 50% of the animation */
+}
+
+
+
+/* #endregion */
+
+/* #region Navigation bar */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 1480px
+    
+}
+
+.navbar {
+    background-color: black;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+}
+
+
+.navbar li {
+    margin: 0 0.5rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    display: block;
+    font-size: .9rem; /* Smaller font size */
+}
+
+.navbar a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+    text-decoration: underline;
+}
+
+
+
+/* #endregion */
+
+/* #region scrolling  */
+html {
+    scroll-behavior: smooth;
+}
+
+#scroll-arrow {
+    font-size: 2rem; /* Make the arrow bigger */
+    display: inline-block;
+    margin-top: 10px; /* Add some spacing above the arrow */
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Fade-in effect */
+    text-decoration: none; /* Remove underline */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ 
+}
+
+#scroll-arrow.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+#scroll-arrow.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* #endregion scrolling */
+
+
+/*#region Sections Space between eachother */
+section {
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    scroll-margin-top: 60px;
+}
+
+
+/* #region About Me */
+
+
+.about-container {
+    position: relative; /* This allows us to position the image relative to the container */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 150px;
+}
+
+
+.about-image img {
+    position: absolute; /* Position the image absolutely within the container */
+    top: -40px; /* Move the image above the boxes */
+    left: 50%; /* Center the image horizontally */
+    transform: translateX(-50%); /* Centering trick to account for image width */
+    width: 250px; /* Adjust size as needed */
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%; /* Optional: Circular image */
+    z-index: 10; /* Ensure the image stays on top of the boxes */
+}
+
+#about .content-box h2 {
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    
+}
+
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 80px; /* Add top padding to create space for the image */
+    gap: 30px;
+}
+
+
+.about-box {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 30px;
+    width: 45%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1; 
+    
+}
+
+.about-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+
+.about-box h3 {
+    margin-bottom: 30px;
+    font-size: 1.5em;
+}
+
+.about-box li {
+    display: flex; /* Ensure image and text are aligned horizontally */
+    align-items: center; /* Vertically center the image and text */
+    margin-bottom: 10px; /* Add space between items */
+}
+
+.hobby-icon {
+    width: 40px; /* Adjust size of the image */
+    height: 40px;
+    margin-right: 10px; /* Space between image and text */
+    border-radius: 50%; /* Optional: make the images circular */
+    object-fit: cover; /* Ensures the image fits within the dimensions */
+}
+.about-box li span {
+    font-weight: bold ; /* Bold the text */
+    font-size: 1.1em;  /* Optional: Adjust the font size if needed */
+    vertical-align: middle; /* Ensure text aligns vertically with the image */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-box {
+        width: 90%; /* Full width on smaller screens */
+        margin-bottom: 20px; /* Adds space between boxes on mobile */
+    }
+
+    .about-image img {
+        margin-bottom: 20px; /* Adds space below the image on mobile */
+    }
+}
+
+
+/* #endregion About me */
+
+/*#region Experience */
+#experience {
+    background-image: url('F35.jpg'); /* Add your background image path */
+    background-size: cover; /* Ensures the image covers the entire width */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 600px; /* Adjust this height to your preference */
+    width: 100vw; /* Ensures the section spans the full viewport width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+}
+
+
+#experience .content-box h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    
+}
+
+#experience h4, h5, h6 {
+    margin: 0; /* Remove default margin */
+    line-height: 1.2; /* Adjust line-height for smaller spacing */
+}
+
+
+#experience .content-box {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white; /* Text color inside the white box */
+    padding: 1rem;
+    max-width: 800px; /* Set a max width for the white box */
+    width: 100%;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /*Add shadow to the box */
+    z-index: 2; /* Ensure the box is above any background elements */
+
+}
+
+/* Optional: Add a semi-transparent overlay to improve text visibility */
+#experience::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% transparency */
+    z-index: 1;
+}
+
+#experience ul {
+    list-style-type: disc;    /* Display bullet points */
+    padding-left: 20px;       /* Indentation for bullets */
+    margin: 1rem 0;           /* Optional: Add spacing above and below the list */
+}
+
+#experience ul li {
+    margin-bottom: 0.5rem;    /* Add space between list items */
+}
+
+/* Timeline styling */
+#experience .timeline {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 30px; /* To leave space for vertical line */
+}
+
+#experience .timeline::before {
+    content: '';
+    position: absolute;
+    left: 14px; /* Position of the vertical line */
+    top: 90px;
+    bottom: 185px;
+    width: 2px;
+    background-color: #ccc;
+}
+
+#experience .timeline-company {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#experience .company-logo {
+    width: 50px;
+    height: 40px;
+    margin-right: 10px;
+    margin-left: 0px;
+}
+
+#experience .timeline-role {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 20px;
+}
+
+
+
+#experience .timeline-role::before {
+    content: '';
+    position: absolute;
+    left: -20px; 
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: #00bcd4;
+    border-radius: 50%;
+}
+
+#experience .role-content h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#experience .role-content ul {
+    margin: 15px;
+    padding: 0 0 0 20px;
+}
+
+#experience .role-content li {
+    list-style-type: none;
+    margin-bottom: 8px;
+}
+
+
+
+/*#endregion */
+
+/*#region Education */
+#education {
+    background-image: url('Uconnweb.jpg'); /* Add your background image path */
+    background-size: cover; /* Ensures the image covers the entire width */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 500px; /* Adjust this height to your preference */
+    width: 100vw; /* Ensures the section spans the full viewport width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+}
+
+
+#education .content-box {
+    color: white; /* Text color inside the white box */
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    max-width: 800px; /* Set a max width for the white box */
+    width: 100%;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /*Add shadow to the box */
+    z-index: 2; /* Ensure the box is above any background elements */
+
+}
+#education .content-box h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    
+}
+#education h3, h4 {
+    margin: 0; /* Remove default margin */
+    line-height: 1.2; /* Adjust line-height for smaller spacing */
+}
+
+#education h4 {
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}
+
+
+/* Optional: Add a semi-transparent overlay to improve text visibility */
+#education::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% transparency */
+    z-index: 1;
+}
+
+#education ul {
+    list-style-type: none;    /* Display bullet points */
+    padding-left: 0px;       /* Indentation for bullets */
+    margin: 1rem 0;           /* Optional: Add spacing above and below the list */
+}
+
+#education ul li {
+    margin-bottom: 0.5rem;    /* Add space between list items */
+}
+
+/* Flexbox layout for education items */
+.education-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Education logo styling */
+.education-logo img {
+    width: 70px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    margin-right: 15px; /* Space between logo and content */
+    /* margin-top: -70px; */
+    margin-bottom: 70px;
+}
+
+/* Education content */
+.education-content {
+    flex-grow: 1;
+}
+
+
+#education h3 {
+    margin: 5px 0;
+}
+
+/*#endregion Education */
+
+/* #region Certifications and Skills */
+#certifications_and_skills {
+    display: flex; /* Makes the section a flex container */
+    justify-content: space-between; /* Spaces the two boxes evenly */
+    align-items: flex-start; /* Aligns them vertically from the top */
+    gap: 20px; /* Adds some space between the two boxes */
+    max-width: 1200px; /* Adjust as needed to keep the boxes within the page width */
+    margin: 2rem auto; /* Center the section horizontally */
+    padding: 1rem;
+}
+
+#certifications_and_skills .content-box {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Ensures both boxes take up equal space */
+    max-width: 48%; /* Limit each box to 48% of the container width */
+}
+
+#certifications_and_skills .content-box h2 {
+    text-align: center;
+    color:black;
+}
+
+/* Optional: Adjust the background colors for clarity */
+#certifications_and_skills .certifications {
+    background-color: white; /* Light blue for certifications */
+    font-weight: bold;
+    font-size: large;
+}
+
+.aws-logo {
+    width: 40px; /* Adjust the size */
+    height: auto;
+    vertical-align: middle; /* Align the logo with the text */
+    margin-right: 10px; /* Add space between the logo and text */
+}
+
+
+
+#certifications_and_skills .skills {
+    background-color: white; /* Light color for skills */
+}
+
+.skill-box {
+    display: inline-block;
+    background-color: #d3d3d3; /* Light gray background */
+    padding: 10px 15px;
+    border-radius: 5px; /* Rounded corners */
+    margin: 5px;
+    font-size: 1.1rem;
+    color: black;
+    font-family: Arial, sans-serif;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Optional: add a shadow for a 3D effect */
+}
+
+.skills {
+    text-align: center; /* Center the boxes */
+}
+
+
+
+/* #endregion Certifications and Skills */
+
+/*#region Contact */
+.contact-links {
+    display: flex; /* Flexbox to arrange elements side by side */
+    justify-content: center; /* Centers the links horizontally */
+    gap: 20px; /* Adds spacing between the icons */
+    margin: 20px 0; /* Adds margin around the icon area */
+}
+
+
+#contact a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #000; /* Change this to your preferred color */
+    display: inline-block;
+    margin: 10px 0;
+}
+
+#contact a i {
+    margin-right: 8px; /* Adds spacing between icon and text */
+    color: #0072b1; /* Blue color for the LinkedIn icon */
+}
+
+/* Change color for the email icon */
+#contact a[href^="mailto"] i {
+    color: #d14836; /* Red color for Gmail */
+    font-size: 4em; /* Increase Gmail icon size */
+
+}
+
+#contact a[href^="https://www.linkedin.com/in/ryan-orozco-b74a25164/"] i {
+    font-size: 4em; /* Increase LinkedIn icon size */
+}
+
+#contact a:hover {
+    color: #0072b1; /* Hover effect */
+}
+
+#contact .content-box h2 {
+    text-align: center;
+    color:white;
+}
+
+/* #endregion Contact */
+
+
+/* #endregion Sections*/
+
+
+
+/* #region Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.5rem; /* Reduced padding */
+    width: 100%;
+    position: relative; /* Changed from fixed to relative */
+    bottom: 0; /* This is now relative to the document flow */
+}
+
+/* #endregion */
+
