@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan Orozco - Software Engineer</title>
+    <link rel="stylesheet" href="Styles/Baseline.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!--#region NavBar-->
+        <nav>
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certifications_and_skills">Certifications</a></li>
+                <li><a href="#certifications_and_skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    <!-- #endregion Navbar -->
+
+    <header id="home">
+        <h1><span id="name"></span></h1>
+        <h2><span id="title"></span></h2>
+        <a href="#about" id="scroll-arrow" class="hidden">&#x25BC;</a> <!-- Downward arrow -->
+        <audio id="whooshSound" src="Images/whoosh.mp3" preload="auto"></audio> <!-- Whoosh sound -->
+
+    </header>
+    
+
+    <!-- #region Calling Scripts -->
+    <script src="Scripts/cursorScript.js"></script>
+
+    <!-- #endregion -->
+
+
+    <!-- #region Sections -->
+
+
+    <!-- #region About Me -->
+    <section id="about">
+        <div class="content-box">
+            <h2>About Me</h2>
+        </div>
+        <div class="about-container">
+            <!-- Picture of yourself -->
+            <div class="about-image">
+                <img src="Images/AboutMeCropped.jpg" alt="Your Picture">
+            </div>
+            
+            <!-- About content: Value and Hobbies in separate boxes -->
+            <div class="about-content">
+
+                 <!-- Hobbies Box -->
+                 <div class="about-box">
+                    <h3>Hobbies</h3>
+                    <ul>
+                        <li>
+                            <img src="Images/running.jpg" alt="Running" class="hobby-icon">
+                            <span>Running</span>
+                        </li>
+                        <li>
+                            <img src="Images/tennis.jpg" alt="Tennis" class="hobby-icon">
+                            <span>Tennis</span>
+                        </li>
+                        <li>
+                            <img src="Images/mensoftball.png" alt="Softball" class="hobby-icon">
+                            <span>Men's Softball</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Professional Value Box -->
+                <div class="about-box">
+                    <h3>My Value</h3>
+                    <ul>
+                        <span>Highly motivated software engineer looking to apply technical and management skills to teams to improve efficiency and digitally transform their operations.</span>
+                    </ul>
+                </div>
+                
+                <div class="about-box">
+                    <h3>Big Fan of</h3>
+                    <ul>
+                        <li>
+                            <img src="Images/uconnbasketball.png" alt="UCONN Basketball" class="hobby-icon">
+                            <span>UCONN Basketball</span>
+                        </li>
+                        <li>
+                            <img src="Images/Yankees.png" alt="Yankees" class="hobby-icon">
+                            <span>Yankees</span>
+                        </li>
+                        <li>
+                            <img src="Images/UFC.png" alt="UFC" class="hobby-icon">
+                            <span>UFC</span>
+                        </li>
+                        <li>
+                            <img src="Images/boxing.png" alt="Boxing" class="hobby-icon">
+                            <span>Boxing</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
+    
+
+    <!-- #endregion About Me -->
+
+    <!-- #region Experience -->
+    <section id="experience">
+        <div class="content-box">
+            <h2>Relevant Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-company">
+                    <img src="Images/LMCOlogo.png" alt="Lockheed Martin" class="company-logo">
+                    <div class="company-info">
+                        <h3>Lockheed Martin</h3>
+                    </div>
+                </div>
+            
+                <div class="timeline-role">
+                    <div class="role-content">
+                        <h4>Software Engineer</h4>
+                        <h5>Full Time</h5>
+                        <h6>June 2024 - Present</h6>
+                        <ul>
+                            <li>Building web applications for mechanics to use on the shop floor.</li>
+                            <li>Continuing to utilize Frontend, Backend, SQL Server, and AWS Cloud computing</li>
+                            <li>Working with cross-functional teams to streamline manufacturing processes.</li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="timeline-role">
+                    <div class="role-content">
+                        <h4>Software Engineering Intern</h4>
+                        <h5>Internship</h5>
+                        <h6>May 2022 - April 2024</h6>
+                        <ul>
+                            <li>Automating machines that enable the flow of manufacturing data to downstream F-35 systems.</li>
+                            <li>Utilizing .NET Core framework, SQL Server, and AWS cloud computing.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </section>
+
+    <!-- #endregion Experience -->
+
+    <!-- #region Education -->
+    <section id="education">
+        <div class="content-box">
+            <h2>Education</h2>
+            <div class="education-item">
+                <div class="education-logo">
+                    <img src="Images/UNHlogo.png" alt="University of New Haven Logo">
+                </div>
+                <div class="education-content">
+                    <h3>University of New Haven</h3>
+                    <h4> New Haven, CT</h4>
+                    <ul>
+                        <li>Masters of Business Administration <i class="fas fa-spinner"></i> </li>
+                        <li>Starting January 2025</li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="education-item">
+                <div class="education-logo">
+                    <img src="Images/UconnLogoPersonalWeb.jpeg" alt="University of Connecticut Logo">
+                </div>
+                <div class="education-content">
+                    <h3>University of Connecticut</h3>
+                    <h4>Storrs, CT</h4>
+                    <ul>
+                        <li>Bachelor of Engineering, Computer Science <i class="fas fa-check-circle"></i></li>
+                        <li>Graduated 2024</i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+     <!-- #endregion Education -->
+
+    <!-- #region Certification and Skills -->
+    <section id="certifications_and_skills">
+        <div class="content-box certifications">
+            <h2>Certifications</h2>
+            <p>
+                <img src="Images/AWS.jpeg" alt="AWS Certified Logo" class="aws-logo">
+                AWS Certified Cloud Practitioner
+            </p>
+        </div>
+        
+    
+        <div class="content-box skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <span class="skill-box">Full Stack Web Development</span>
+                <span class="skill-box">AWS</span>
+                <span class="skill-box">.NET Framework</span>
+                <span class="skill-box">SQL</span>
+                <span class="skill-box">C</span>
+                <span class="skill-box">C#</span>
+                <span class="skill-box">HTML</span>
+                <span class="skill-box">CSS</span>
+                <span class="skill-box">Java</span>
+                <span class="skill-box">Python</span>
+                <span class="skill-box">JavaScript</span>
+                <span class="skill-box">Scheme</span>
+                <span class="skill-box">Microsoft Office</span>
+                <span class="skill-box">Communication</span>
+            </div>
+        </div>
+    </section>
+    
+  <!-- #endregion Certifications and Skills -->
+
+    <!-- #region Contact -->
+    <section id="contact">
+        <div class="content-box">
+        <h2>Contact Info</h2>
+        
+        <div class="contact-links">
+            <!-- Email Icon -->
+            <a href="mailto:orozcoryan1@gmail.com" target="_blank">
+                <i class="fas fa-envelope"></i> 
+            </a>
+    
+            <!-- LinkedIn Icon -->
+            <a href="https://www.linkedin.com/in/ryan-orozco-b74a25164/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </div>
+    </section>
+    <!-- #endregion Contact -->
+
+
+    <!-- #endregion Sections -->
+    
+ 
+    <!-- #region Footer -->
+    <footer>
+        <p>&copy; 2024 Ryan Orozco. All rights reserved.</p>
+    </footer>
+
+    <!-- #endregion -->
+
+</body>
+</html>
