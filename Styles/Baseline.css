@@ -87,11 +87,43 @@ nav {
     text-decoration: underline;
 }
 
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+
+/*#region Phone view screens with a width smaller than 768px */
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: none; /* Initially hide the navbar */
+        flex-direction: column; /* Stack items vertically */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: black;
+    }
+    .navbar li {
+        margin: 1rem 0;
+        text-align: center;
+    }
+    .hamburger {
+        display: block;
+    }
+    .navbar.active {
+        display: flex; /* Show navbar when active */
+    }
+}
+/* #endregion Phone View */
+
 
 
 /* #endregion */
 
-/* #region scrolling  */
+/* #region Scrolling  */
 html {
     scroll-behavior: smooth;
 }
@@ -219,7 +251,7 @@ section {
     vertical-align: middle; /* Ensure text aligns vertically with the image */
 }
 
-/* Media query for smaller screens */
+/* #region Phone View */
 @media (max-width: 768px) {
     .about-container {
         flex-direction: column;
@@ -232,7 +264,7 @@ section {
     }
 
     .about-box {
-        width: 90%; /* Full width on smaller screens */
+        width: 270px; /* Full width on smaller screens */
         margin-bottom: 20px; /* Adds space between boxes on mobile */
     }
 
@@ -240,7 +272,7 @@ section {
         margin-bottom: 20px; /* Adds space below the image on mobile */
     }
 }
-
+/* #endregion Phone view */
 
 /* #endregion About me */
 
@@ -373,6 +405,49 @@ section {
 }
 
 
+    /* #region Phone View */
+    @media (max-width: 768px) {
+        #experience {
+            padding: 10px; /* Add padding for smaller screens */
+            height: auto; /* Let height adjust automatically for smaller devices */
+        }
+
+        #experience .content-box {
+            padding: 0.5rem; /* Less padding on smaller screens */
+            max-width: 100%; /* Use full width on mobile */
+        }
+
+        #experience .content-box h2 {
+            font-size: 2rem; /* Smaller font size for mobile headers */
+        }
+
+        #experience .timeline {
+            padding-left: 10px; /* Reduce padding */
+        }
+
+        #experience .timeline-role {
+            margin-bottom: 20px; /* Reduce bottom margin */
+        }
+
+        #experience .company-logo {
+            width: 30px; /* Scale down logos even further */
+            height: 20px;
+        }
+
+        #experience .timeline-role::before {
+            width: 6px;
+            height: 6px;
+            left: -4px;
+        }
+
+        #experience .timeline::before {
+            left: 8px;
+            top: 90px;
+            bottom: 238px
+
+        }
+    }
+    /* #endregion phone view */
 
 /*#endregion */
 
@@ -421,7 +496,7 @@ section {
 }
 
 
-/* Optional: Add a semi-transparent overlay to improve text visibility */
+
 #education::before {
     content: "";
     position: absolute;
@@ -443,23 +518,22 @@ section {
     margin-bottom: 0.5rem;    /* Add space between list items */
 }
 
-/* Flexbox layout for education items */
 .education-item {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 
-/* Education logo styling */
+
 .education-logo img {
     width: 70px; /* Adjust as needed */
     height: 50px; /* Adjust as needed */
     margin-right: 15px; /* Space between logo and content */
-    /* margin-top: -70px; */
+    /* margin-top: -30px; */
     margin-bottom: 70px;
 }
 
-/* Education content */
+
 .education-content {
     flex-grow: 1;
 }
@@ -468,6 +542,38 @@ section {
 #education h3 {
     margin: 5px 0;
 }
+
+/* #region Phone View */
+@media (max-width: 768px) {
+    #education {
+        height: 500px; /* Keep the original height for larger screens */
+    }
+
+    #education .content-box h2 {
+        font-size: 2rem; /* Restore font size for larger screens */
+    }
+
+    .education-item {
+        flex-direction: row; /* Horizontal layout for larger screens */
+        align-items: center;
+    }
+
+    .education-logo img {
+        width: 70px; /* Restore size for larger screens */
+        height: 60px; /* Restore size for larger screens */
+        margin-right: 15px; /* Add space between logo and content */
+        margin-top: -20px;
+        margin-bottom: 70px;
+        margin-left: 10px
+    }
+
+    .education-content {
+        text-align: left; /* Left-align the content for larger screens */
+    }
+}
+
+/* #endregion Phone View */
+
 
 /*#endregion Education */
 
@@ -532,7 +638,54 @@ section {
     text-align: center; /* Center the boxes */
 }
 
+@media (max-width: 768px) {
+    #certifications_and_skills {
+        flex-direction: column; /* Stack the Certifications box above the Skills box */
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+        padding: 3rem;
+    }
 
+    #certifications_and_skills .content-box {
+        width: 100%; /* Full width on mobile */
+        max-width: 100%; /* Ensure it takes the entire width */
+        text-align: center; /* Center content inside the box */
+    }
+}
+
+#certifications_and_skills .certifications {
+    background-color: white;
+    font-weight: bold;
+    font-size: large;
+}
+
+.aws-logo {
+    width: 40px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+#certifications_and_skills .skills {
+    background-color: white;
+}
+
+.skill-box {
+    display: inline-block;
+    background-color: #d3d3d3;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 1.1rem;
+    color: black;
+    font-family: Arial, sans-serif;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.skills {
+    text-align: center;
+}
 
 /* #endregion Certifications and Skills */
 
