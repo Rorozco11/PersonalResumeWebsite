@@ -712,11 +712,11 @@ footer {
             position: absolute;
             top: 100%;
             left: 0;
-            width: 100%;
-            background-color: black;
+            width: 50%;
+            background-color: white;
         }
         .navbar li {
-            margin: 1rem 0;
+            margin: 0rem 0;
             text-align: center;
         }
         .hamburger {
@@ -724,6 +724,20 @@ footer {
         }
         .navbar.active {
             display: flex; /* Show navbar when active */
+        }
+        .navbar a {
+            text-decoration: none;
+            color: black;
+            font-weight:bold;
+            padding: 0.5rem 1rem;
+            display: block;
+            font-size: .9rem; /* Smaller font size */
+        }
+        
+        .navbar a:hover {
+            background-color: black;
+            border-radius: 5px;
+            text-decoration: underline;
         }
 
     }
@@ -735,8 +749,8 @@ footer {
             position: absolute;
             top: 100%;
             left: 0;
-            width: 100%;
-            background-color: black;
+            width: 50%;
+            background-color: white;
         }
         .navbar li {
             margin: 1rem 0;
@@ -748,12 +762,26 @@ footer {
         .navbar.active {
             display: flex; /* Show navbar when active */
         }
+        .navbar a {
+            text-decoration: none;
+            color: black;
+            font-weight:bold;
+            padding: 0.5rem 1rem;
+            display: block;
+            font-size: .9rem; /* Smaller font size */
+        }
+        .navbar a:hover {
+            background-color: black;
+            border-radius: 5px;
+            text-decoration: underline;
+        }
+        
 
     }
 
     /* #endregion Navbar */
 
-    /* #region about me */
+    /* #region About Me */
     @media screen and (max-width: 400px) {
         .about-container {
             flex-direction: column;
@@ -844,7 +872,7 @@ footer {
 
     /* #endregion about me */
 
-    /* #region experience  */
+    /* #region Experience  */
     
     @media screen and (max-width: 400px) {
         #experience {
@@ -1103,7 +1131,7 @@ footer {
 
     /* #endregion Contact Info */
 
-    /* #region footer */
+    /* #region Footer */
 
     @media screen and (min-width: 400px) and (max-width:600px){
         footer {
