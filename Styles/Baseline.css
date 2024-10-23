@@ -857,6 +857,7 @@ footer {
             gap: 30px;
             margin-left: -100px;
         }
+        
     
         .about-box {
             background-color: #f0f0f0;
@@ -865,6 +866,18 @@ footer {
             width: 45%;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
             z-index: 1;
+        }
+
+        .about-image img {
+            position: absolute; /* Position the image absolutely within the container */
+            top: -20px; /* Move the image above the boxes */
+            left: 50%; /* Center the image horizontally */
+            transform: translateX(-50%); /* Centering trick to account for image width */
+            width: 230px; /* Adjust size as needed */
+            height: 230px;
+            object-fit: cover;
+            border-radius: 50%; /* Optional: Circular image */
+            z-index: 10; /* Ensure the image stays on top of the boxes */
         }
     }
 
@@ -958,6 +971,18 @@ footer {
             top: 90px;
             bottom: 238px
 
+        }
+    }
+
+    @media screen and (min-width: 750px) and (max-width:780px) {
+        #experience .timeline::before {
+            content: '';
+            position: absolute;
+            left: 14px;
+            top: 90px;
+            bottom: 195px;
+            width: 2px;
+            background-color: #ccc;
         }
     }
     /* #endregion  */
@@ -1081,6 +1106,16 @@ footer {
         
         
     }
+
+    @media screen and (min-width: 750px) and (max-width:1000px) {
+        #certifications_and_skills .certifications {
+            background-color: white;
+            font-weight: bold;
+            font-size: large;
+            text-align: center;
+        }
+        
+    }
     /* #endregion Certifications and Skills */
     
     /* #region Contact Info */
@@ -1144,7 +1179,17 @@ footer {
             bottom: 0; /* This is now relative to the document flow */
         }
     }
-
+    @media screen and (min-width: 750px) and (max-width:800px){
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 0.5rem;
+            width: 105%;
+            position: relative;
+            bottom: 0;
+        }
+    }
     /* #endregion footer */
 
     /* #endregion Views on other Devices */
