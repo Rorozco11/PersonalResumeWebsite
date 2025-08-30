@@ -9,18 +9,59 @@
 </head>
 <body>
     <!--#region NavBar-->
-        <nav>
-            <ul class="navbar" id = "navbar">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#certifications_and_skills">Certifications</a></li>
-                <li><a href="#certifications_and_skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                &#9776; <!-- Unicode for hamburger icon -->
+        <nav class="modern-navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <a href="#home" class="brand-link">
+                        <span class="brand-icon">⚡</span>
+                        <span class="brand-text">Ryan Orozco</span>
+                    </a>
+                </div>
+                
+                <ul class="nav-menu" id="navbar">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">
+                            <i class="fas fa-home"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">
+                            <i class="fas fa-user"></i>
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#experience" class="nav-link">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Experience</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#education" class="nav-link">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Education</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#certifications_and_skills" class="nav-link">
+                            <i class="fas fa-certificate"></i>
+                            <span>Skills</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+                
+                <div class="nav-toggle" id="hamburger">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </div>
             </div>
         </nav>
         <script src="Scripts/navbarScript.js"></script>
