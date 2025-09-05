@@ -53,8 +53,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Active state management based on scroll position
     function updateActiveNavLink() {
-        const sections = document.querySelectorAll('section[id]');
+        const sections = document.querySelectorAll('section[id], header[id]');
         const scrollPos = window.scrollY + 100;
+
+        let activeFound = false;
 
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
@@ -69,9 +71,19 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Add active class to current section link
                 if (navLink) {
                     navLink.classList.add('active');
+                    activeFound = true;
                 }
             }
         });
+
+        // If no section is active and we're at the top, make Home active
+        if (!activeFound && window.scrollY < 100) {
+            navLinks.forEach(link => link.classList.remove('active'));
+            const homeLink = document.querySelector('.nav-link[href="#home"]');
+            if (homeLink) {
+                homeLink.classList.add('active');
+            }
+        }
     }
 
     // Navbar background change on scroll

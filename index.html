@@ -84,10 +84,6 @@
         
         <!-- Main content -->
         <div class="hero-content">
-            <div class="hero-text-container">
-                <div class="hero-greeting">
-                    <span class="greeting-text">Hello, I'm</span>
-                </div>
                 
                 <h1 class="hero-name">
                     <span id="name"></span>
@@ -97,9 +93,6 @@
                     <span id="title"></span>
                 </h2>
                 
-                <div class="hero-description">
-                    <p>Passionate about creating innovative solutions through code</p>
-                </div>
                 
                 <div class="hero-actions">
                     <a href="#about" class="cta-button primary">
@@ -112,26 +105,7 @@
                     </a>
                 </div>
             </div>
-            
-            <!-- Tech stack preview -->
-            <div class="tech-stack-preview">
-                <div class="tech-item">
-                    <i class="fab fa-js-square"></i>
-                    <span>JavaScript</span>
-                </div>
-                <div class="tech-item">
-                    <i class="fab fa-python"></i>
-                    <span>Python</span>
-                </div>
-                <div class="tech-item">
-                    <i class="fab fa-react"></i>
-                    <span>React</span>
-                </div>
-                <div class="tech-item">
-                    <i class="fab fa-aws"></i>
-                    <span>AWS</span>
-                </div>
-            </div>
+                        
         </div>
         
         <!-- Scroll indicator -->
@@ -157,69 +131,144 @@
 
 
     <!-- #region About Me -->
-    <section id="about">
-        <div class="content-box">
-            <h2>About Me</h2>
+    <section id="about" class="modern-about-section">
+        <!-- Animated background elements -->
+        <div class="about-background">
+            <div class="code-particles">
+                <div class="code-line"></div>
+                <div class="code-line"></div>
+                <div class="code-line"></div>
+                <div class="code-line"></div>
+                <div class="code-line"></div>
+            </div>
+            <div class="tech-grid-overlay"></div>
         </div>
+
         <div class="about-container">
-            <!-- Picture of yourself -->
-            <div class="about-image">
-                <img src="Images/AboutMeCropped.jpg" alt="Your Picture">
+            <div class="about-header">
+                <h2 class="section-title">
+                    <span class="title-icon">👨‍💻</span>
+                    About Me
+                </h2>
             </div>
-            
-            <!-- About content: Value and Hobbies in separate boxes -->
-            <div class="about-content">
 
-                 <!-- Hobbies Box -->
-                 <div class="about-box">
-                    <h3>Hobbies</h3>
-                    <ul>
-                        <li>
-                            <img src="Images/running.jpg" alt="Running" class="hobby-icon">
-                            <span>Running</span>
-                        </li>
-                        <li>
-                            <img src="Images/tennis.jpg" alt="Tennis" class="hobby-icon">
-                            <span>Tennis</span>
-                        </li>
-                        <li>
-                            <img src="Images/mensoftball.png" alt="Softball" class="hobby-icon">
-                            <span>Men's Softball</span>
-                        </li>
-                    </ul>
+            <div class="about-content-grid">
+                <!-- Profile Card -->
+                <div class="profile-card">
+                    <div class="profile-image-container">
+                        <img src="Images/AboutMeCropped.jpg" alt="Ryan Orozco" class="profile-image">
+                    </div>
+                    <div class="profile-info">
+                        <h3 class="profile-name">Ryan Orozco</h3>
+                        <p class="profile-title">Software Engineer</p>
+                        <div class="profile-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Connecticut, USA</span>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Professional Value Box -->
-                <div class="about-box">
-                    <h3>My Value</h3>
-                    <ul>
-                        <span>Highly motivated software engineer looking to apply technical and management skills to teams to improve efficiency and digitally transform their operations.</span>
-                    </ul>
+                <!-- Professional Summary Card -->
+                <div class="summary-card">
+                    <div class="card-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Professional Summary</h3>
+                    </div>
+                    <div class="card-content">
+                        <p class="summary-text">
+                            Highly motivated software engineer with expertise in full-stack development, 
+                            cloud computing, and digital transformation. Passionate about building 
+                            innovative solutions that streamline operations and enhance user experiences.
+                        </p>
+                        <div class="tech-highlights">
+                            <span class="tech-tag">Full Stack</span>
+                            <span class="tech-tag">Cloud Computing</span>
+                            <span class="tech-tag">Digital Transformation</span>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="about-box">
-                    <h3>Big Fan of</h3>
-                    <ul>
-                        <li>
-                            <img src="Images/uconnbasketball.png" alt="UCONN Basketball" class="hobby-icon">
-                            <span>UCONN Basketball</span>
-                        </li>
-                        <li>
-                            <img src="Images/Yankees.png" alt="Yankees" class="hobby-icon">
-                            <span>Yankees</span>
-                        </li>
-                        <li>
-                            <img src="Images/UFC.png" alt="UFC" class="hobby-icon">
-                            <span>UFC</span>
-                        </li>
-                        <li>
-                            <img src="Images/boxing.png" alt="Boxing" class="hobby-icon">
-                            <span>Boxing</span>
-                        </li>
-                    </ul>
+
+                <!-- Technical Expertise Card -->
+                <div class="expertise-card">
+                    <div class="card-header">
+                        <i class="fas fa-cogs"></i>
+                        <h3>Technical Focus</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="expertise-grid">
+                            <div class="expertise-item">
+                                <i class="fas fa-laptop-code"></i>
+                                <span>Web Development</span>
+                            </div>
+                            <div class="expertise-item">
+                                <i class="fas fa-cloud"></i>
+                                <span>AWS Cloud</span>
+                            </div>
+                            <div class="expertise-item">
+                                <i class="fas fa-database"></i>
+                                <span>Database Design</span>
+                            </div>
+                            <div class="expertise-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Responsive Design</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Interests & Hobbies Card -->
+                <div class="interests-card">
+                    <div class="card-header">
+                        <i class="fas fa-heart"></i>
+                        <h3>Beyond Code</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="interests-grid">
+                            <div class="interest-item">
+                                <img src="Images/running.jpg" alt="Running" class="interest-icon">
+                                <span>Running</span>
+                            </div>
+                            <div class="interest-item">
+                                <img src="Images/tennis.jpg" alt="Tennis" class="interest-icon">
+                                <span>Tennis</span>
+                            </div>
+                            <div class="interest-item">
+                                <img src="Images/mensoftball.png" alt="Softball" class="interest-icon">
+                                <span>Softball</span>
+                            </div>
+                            <div class="interest-item">
+                                <img src="Images/uconnbasketball.png" alt="UCONN Basketball" class="interest-icon">
+                                <span>UCONN Basketball</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sports & Entertainment Card -->
+                <div class="sports-card">
+                    <div class="card-header">
+                        <i class="fas fa-trophy"></i>
+                        <h3>Sports & Entertainment</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="sports-grid">
+                            <div class="sport-item">
+                                <img src="Images/Yankees.png" alt="Yankees" class="sport-icon">
+                                <span>Yankees</span>
+                            </div>
+                            <div class="sport-item">
+                                <img src="Images/UFC.png" alt="UFC" class="sport-icon">
+                                <span>UFC</span>
+                            </div>
+                            <div class="sport-item">
+                                <img src="Images/boxing.png" alt="Boxing" class="sport-icon">
+                                <span>Boxing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            
         </div>
     </section>
     
@@ -228,42 +277,177 @@
     <!-- #endregion About Me -->
 
     <!-- #region Experience -->
-    <section id="experience">
-        <div class="content-box">
-            <h2>Relevant Work Experience</h2>
-            <div class="timeline">
-                <div class="timeline-company">
-                    <img src="Images/LMCOlogo.png" alt="Lockheed Martin" class="company-logo">
-                    <div class="company-info">
-                        <h3>Lockheed Martin</h3>
+    <section id="experience" class="modern-experience-section">
+        <!-- Animated background elements -->
+        <div class="experience-background">
+            <div class="tech-particles">
+                <div class="tech-particle"></div>
+                <div class="tech-particle"></div>
+                <div class="tech-particle"></div>
+                <div class="tech-particle"></div>
+                <div class="tech-particle"></div>
+                <div class="tech-particle"></div>
+            </div>
+            <div class="circuit-pattern"></div>
+        </div>
+
+        <div class="experience-container">
+            <div class="experience-header">
+                <h2 class="section-title">
+                    <span class="title-icon">💼</span>
+                    Professional Experience
+                </h2>
+                <p class="section-subtitle">Building the Future of Manufacturing Technology</p>
+            </div>
+
+            <div class="experience-timeline">
+                <!-- Current Role -->
+                <div class="experience-item current">
+                    <div class="experience-timeline-marker">
+                        <div class="timeline-dot current-dot"></div>
+                        <div class="timeline-line"></div>
+                    </div>
+                    
+                    <div class="experience-card">
+                        <div class="experience-header-card">
+                            <div class="company-info">
+                                <div class="company-logo-container">
+                                    <img src="Images/LMCOlogo.png" alt="Lockheed Martin" class="company-logo">
+                                    <div class="company-badge">Current</div>
+                                </div>
+                                <div class="company-details">
+                                    <h3 class="company-name">Lockheed Martin</h3>
+                                    <p class="company-industry">Aerospace & Defense</p>
+                                </div>
+                            </div>
+                            <div class="role-meta">
+                                <span class="employment-type full-time">Full Time</span>
+                                <span class="duration">June 2024 - Present</span>
+                            </div>
+                        </div>
+
+                        <div class="role-info">
+                            <h4 class="role-title">Software Engineer</h4>
+                            <p class="role-description">
+                                Developing innovative web applications that revolutionize manufacturing operations 
+                                and enhance efficiency on the shop floor.
+                            </p>
+                        </div>
+
+                        <div class="achievements">
+                            <h5 class="achievements-title">
+                                <i class="fas fa-rocket"></i>
+                                Key Achievements
+                            </h5>
+                            <ul class="achievements-list">
+                                <li class="achievement-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Built scalable web applications for shop floor mechanics, improving operational efficiency</span>
+                                </li>
+                                <li class="achievement-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Implemented full-stack solutions using modern web technologies and cloud infrastructure</span>
+                                </li>
+                                <li class="achievement-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Collaborated with cross-functional teams to streamline manufacturing processes</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="tech-stack">
+                            <h5 class="tech-stack-title">
+                                <i class="fas fa-code"></i>
+                                Technologies Used
+                            </h5>
+                            <div class="tech-tags">
+                                <span class="tech-tag primary">Frontend Development</span>
+                                <span class="tech-tag primary">Backend Development</span>
+                                <span class="tech-tag secondary">SQL Server</span>
+                                <span class="tech-tag secondary">AWS Cloud</span>
+                                <span class="tech-tag secondary">Web Applications</span>
+                                <span class="tech-tag secondary">Manufacturing Systems</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            
-                <div class="timeline-role">
-                    <div class="role-content">
-                        <h4>Software Engineer</h4>
-                        <h5>Full Time</h5>
-                        <h6>June 2024 - Present</h6>
-                        <ul>
-                            <li>Building web applications for mechanics to use on the shop floor.</li>
-                            <li>Continuing to utilize Frontend, Backend, SQL Server, and AWS Cloud computing</li>
-                            <li>Working with cross-functional teams to streamline manufacturing processes.</li>
-                        </ul>
+
+                <!-- Previous Role -->
+                <div class="experience-item">
+                    <div class="experience-timeline-marker">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-line"></div>
+                    </div>
+                    
+                    <div class="experience-card">
+                        <div class="experience-header-card">
+                            <div class="company-info">
+                                <div class="company-logo-container">
+                                    <img src="Images/LMCOlogo.png" alt="Lockheed Martin" class="company-logo">
+                                    <div class="company-badge internship">Internship</div>
+                                </div>
+                                <div class="company-details">
+                                    <h3 class="company-name">Lockheed Martin</h3>
+                                    <p class="company-industry">Aerospace & Defense</p>
+                                </div>
+                            </div>
+                            <div class="role-meta">
+                                <span class="employment-type internship">Internship</span>
+                                <span class="duration">May 2022 - April 2024</span>
+                            </div>
+                        </div>
+
+                        <div class="role-info">
+                            <h4 class="role-title">Software Engineering Intern</h4>
+                            <p class="role-description">
+                                Contributed to critical F-35 manufacturing systems by developing automation solutions 
+                                that enhanced data flow and operational efficiency.
+                            </p>
+                        </div>
+
+                        <div class="achievements">
+                            <h5 class="achievements-title">
+                                <i class="fas fa-rocket"></i>
+                                Key Achievements
+                            </h5>
+                            <ul class="achievements-list">
+                                <li class="achievement-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Automated manufacturing machines to enable seamless data flow to F-35 systems</span>
+                                </li>
+                                <li class="achievement-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Developed robust solutions using .NET Core framework and cloud technologies</span>
+                                </li>
+                                <li class="achievement-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Gained hands-on experience with enterprise-level software development</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="tech-stack">
+                            <h5 class="tech-stack-title">
+                                <i class="fas fa-code"></i>
+                                Technologies Used
+                            </h5>
+                            <div class="tech-tags">
+                                <span class="tech-tag primary">.NET Core</span>
+                                <span class="tech-tag primary">SQL Server</span>
+                                <span class="tech-tag secondary">AWS Cloud</span>
+                                <span class="tech-tag secondary">Automation</span>
+                                <span class="tech-tag secondary">Manufacturing Data</span>
+                                <span class="tech-tag secondary">F-35 Systems</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            
-                <div class="timeline-role">
-                    <div class="role-content">
-                        <h4>Software Engineering Intern</h4>
-                        <h5>Internship</h5>
-                        <h6>May 2022 - April 2024</h6>
-                        <ul>
-                            <li>Automating machines that enable the flow of manufacturing data to downstream F-35 systems.</li>
-                            <li>Utilizing .NET Core framework, SQL Server, and AWS cloud computing.</li>
-                        </ul>
-                    </div>
+
+                <!-- Timeline End -->
+                <div class="timeline-end">
+                    <div class="timeline-dot end-dot"></div>
                 </div>
-            </div>            
+            </div>
         </div>
     </section>
 
