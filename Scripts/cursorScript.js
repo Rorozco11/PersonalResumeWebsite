@@ -25,9 +25,27 @@ function typeWriter() {
         titleIndex++;
         setTimeout(typeWriter, typingSpeed);
     }
-    // After title is fully typed, show scroll indicator
+    // After title is fully typed, show dropdown arrow and scroll indicator
     else {
         titleElement.innerHTML = titleText; // Remove cursor from the title
+        
+        // Show dropdown arrow with enhanced animation
+        const dropdownArrow = document.getElementById('dropdownArrow');
+        if (dropdownArrow) {
+            dropdownArrow.style.opacity = '1';
+            dropdownArrow.style.transform = 'translateY(0)';
+            
+            // Add click event to dropdown arrow for smooth scrolling
+            dropdownArrow.addEventListener('click', () => {
+                const aboutSection = document.getElementById('about');
+                if (aboutSection) {
+                    aboutSection.scrollIntoView({ 
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        }
         
         // Show scroll indicator with enhanced animation
         if (scrollIndicator) {
