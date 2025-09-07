@@ -704,9 +704,46 @@ section {
 /* Content Grid */
 .about-content-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
     gap: 2rem;
     align-items: start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Profile card is centered with max width */
+.profile-card {
+    grid-column: 1 / -1;
+    justify-self: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Summary card spans full width */
+.summary-card {
+    grid-column: 1 / -1;
+}
+
+/* Beyond Code and Technical Focus cards are centered and spaced */
+.interests-card,
+.expertise-card {
+    grid-column: span 1;
+    justify-self: center;
+    max-width: 400px;
+    width: 100%;
+    margin: 1rem 0;
+    position: relative;
+}
+
+/* Add extra spacing between the two featured cards */
+.interests-card {
+    margin-right: 1rem;
+}
+
+.expertise-card {
+    margin-left: 1rem;
 }
 
 /* Card Base Styles */
@@ -764,8 +801,9 @@ section {
 
 /* Profile Card */
 .profile-card {
-    grid-column: span 1;
     text-align: center;
+    margin: 0 auto;
+    position: relative;
 }
 
 .profile-image-container {
@@ -2935,6 +2973,30 @@ section {
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1024px) {
+    .about-content-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 2rem;
+    }
+    
+    .profile-card {
+        grid-column: 1;
+        justify-self: center;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+    
+    .summary-card,
+    .interests-card,
+    .expertise-card {
+        grid-column: 1;
+        justify-self: stretch;
+        max-width: none;
+        margin: 0;
+    }
+}
+
 @media (max-width: 768px) {
     .hero-content {
         padding: 0 1rem;
@@ -3299,7 +3361,25 @@ section {
     
     .about-content-grid {
         grid-template-columns: 1fr;
+        grid-template-rows: auto;
         gap: 1.5rem;
+    }
+    
+    /* Reset grid positioning for mobile */
+    .profile-card {
+        grid-column: 1;
+        justify-self: center;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .summary-card,
+    .interests-card,
+    .expertise-card {
+        grid-column: 1;
+        justify-self: stretch;
+        max-width: none;
+        margin: 0;
     }
     
     .profile-card,
