@@ -2801,7 +2801,7 @@ section {
     font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 700;
     margin: 0 0 1rem 0;
-    background: linear-gradient(45deg, #40e0d0, #00bfff, #40e0d0);
+    background: linear-gradient(45deg, #fff, #e0e0e0);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -2828,9 +2828,12 @@ section {
 /* Projects Grid */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: 1fr;
     gap: 2rem;
     margin-bottom: 4rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Project Cards */
@@ -2842,6 +2845,10 @@ section {
     overflow: hidden;
     transition: all 0.3s ease;
     position: relative;
+    transform-style: preserve-3d;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card::before {
@@ -2866,10 +2873,10 @@ section {
 }
 
 .project-card.featured {
-    grid-column: span 2;
     background: rgba(64, 224, 208, 0.05);
     border-color: rgba(64, 224, 208, 0.2);
 }
+
 
 /* Project Image Container */
 .project-image-container {
@@ -2939,6 +2946,25 @@ section {
 
 .preview-logo {
     font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-logo-image {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 8px;
+    transition: all 0.3s ease;
+}
+
+.project-logo-image:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.15);
 }
 
 .preview-text {
@@ -2992,6 +3018,9 @@ section {
 /* Project Content */
 .project-content {
     padding: 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-category {
@@ -3059,6 +3088,50 @@ section {
 .feature-item i {
     color: #40e0d0;
     width: 16px;
+}
+
+/* Project Implementation Section */
+.project-implementation {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.implementation-title {
+    color: #40e0d0;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.implementation-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.implementation-list li {
+    color: #b0b0b0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.implementation-list li::before {
+    content: '▶';
+    position: absolute;
+    left: 0;
+    color: #40e0d0;
+    font-size: 0.8rem;
+}
+
+.implementation-list li strong {
+    color: #fff;
+    font-weight: 600;
 }
 
 /* Project Stats */
@@ -3418,6 +3491,7 @@ section {
     .projects-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
+        max-width: 600px;
     }
     
     .project-card.featured {
@@ -4102,6 +4176,9 @@ section {
         grid-template-columns: 1fr;
         gap: 1.5rem;
         margin-bottom: 2rem;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .project-card.featured {
@@ -4114,6 +4191,16 @@ section {
     
     .project-content {
         padding: 1.5rem;
+    }
+    
+    .project-card {
+        min-height: 500px;
+    }
+    
+    .project-logo-image {
+        width: 50px;
+        height: 50px;
+        padding: 6px;
     }
     
     .project-stats {
@@ -4132,6 +4219,26 @@ section {
     
     .floating-code {
         display: none;
+    }
+    
+    .project-implementation {
+        margin-top: 1rem;
+        padding-top: 1rem;
+    }
+    
+    .implementation-list li {
+        font-size: 0.85rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .project-card {
+        min-height: 450px;
+    }
+    
+    .project-logo-image {
+        width: 45px;
+        height: 45px;
+        padding: 5px;
     }
 
     /* Modern Experience Section Small Mobile */
