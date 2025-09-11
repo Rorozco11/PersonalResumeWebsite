@@ -3478,6 +3478,18 @@ section {
 
 /* ===== RESPONSIVE DESIGN ===== */
 
+/* Desktop - Show floating elements */
+@media (min-width: 1025px) {
+    .floating-particles,
+    .floating-elements,
+    .floating-code,
+    .floating-icons,
+    .code-particles,
+    .tech-particles {
+        display: block;
+    }
+}
+
 /* Tablet Landscape */
 @media (max-width: 1024px) and (min-width: 769px) {
     .hero-content {
@@ -3600,7 +3612,12 @@ section {
         font-size: 0.8rem;
     }
     
-    .floating-particles {
+    .floating-particles,
+    .floating-elements,
+    .floating-code,
+    .floating-icons,
+    .code-particles,
+    .tech-particles {
         display: none;
     }
     
@@ -3769,6 +3786,14 @@ section {
     
     .summary-content h4 {
         font-size: 1.5rem;
+    }
+    
+    /* Status Badge Mobile */
+    .status-badge {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.75rem;
+        gap: 0.3rem;
+        border-radius: 15px;
     }
     
     /* Contact Mobile */
@@ -4320,7 +4345,12 @@ section {
         font-size: 2rem;
     }
     
-    .floating-code {
+    .floating-code,
+    .floating-particles,
+    .floating-elements,
+    .floating-icons,
+    .code-particles,
+    .tech-particles {
         display: none;
     }
     
@@ -4368,8 +4398,8 @@ section {
     }
     
     .company-logo {
-        width: 40px;
-        height: 40px;
+        width: 70px;
+        height: 50px;
     }
     
     .company-details h3 {
@@ -4405,6 +4435,14 @@ section {
     
     #certifications_and_skills .content-box {
         max-width: 95%;
+    }
+    
+    /* Status Badge Small Mobile */
+    .status-badge {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.7rem;
+        gap: 0.25rem;
+        border-radius: 12px;
     }
 }
 
