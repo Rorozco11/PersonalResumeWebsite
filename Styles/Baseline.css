@@ -3036,6 +3036,110 @@ section {
     flex-direction: column;
 }
 
+/* ===== PROJECT DROPDOWN SYSTEM ===== */
+
+/* Project Card Base Styles */
+.project-card {
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    position: relative;
+}
+
+/* Toggle Button */
+.project-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(64, 224, 208, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(64, 224, 208, 0.3);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #40e0d0;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+    z-index: 20;
+    box-shadow: 0 4px 12px rgba(64, 224, 208, 0.2);
+}
+
+.project-toggle:hover {
+    background: rgba(64, 224, 208, 0.25);
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(64, 224, 208, 0.3);
+}
+
+.project-toggle i {
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Collapsed State */
+.project-card.collapsed {
+    height: auto;
+    min-height: auto;
+}
+
+.project-card.collapsed .project-content {
+    max-height: 0;
+    opacity: 0;
+    padding: 0 2rem;
+    margin: 0;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card.collapsed .project-toggle i {
+    transform: rotate(0deg);
+}
+
+/* Expanded State */
+.project-card.expanded {
+    height: auto;
+    min-height: auto;
+}
+
+.project-card.expanded .project-content {
+    max-height: 2000px;
+    opacity: 1;
+    padding: 2rem;
+    margin: 0;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card.expanded .project-toggle i {
+    transform: rotate(180deg);
+}
+
+/* Project Title Section - Always Visible */
+.project-title-section {
+    padding: 1.5rem 2rem 1rem 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.02);
+    transition: all 0.3s ease;
+}
+
+.project-title-section h3 {
+    margin: 0;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* Collapsed title styling */
+.project-card.collapsed .project-title-section {
+    padding: 1rem 2rem;
+}
+
+.project-card.collapsed .project-title-section h3 {
+    font-size: 1.2rem;
+}
+
 .project-category {
     color: #40e0d0;
     font-size: 0.9rem;
@@ -4515,4 +4619,85 @@ section {
 #scroll-arrow.visible {
     visibility: visible;
     opacity: 1;
+}
+
+/* ===== RESPONSIVE DROPDOWN STYLES ===== */
+
+/* Tablet Responsive */
+@media (max-width: 1024px) {
+    .project-toggle {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    
+    .project-title-section {
+        padding: 1.2rem 1.5rem 0.8rem 1.5rem;
+    }
+    
+    .project-title-section h3 {
+        font-size: 1.3rem;
+    }
+    
+    .project-card.collapsed .project-title-section {
+        padding: 0.8rem 1.5rem;
+    }
+    
+    .project-card.collapsed .project-title-section h3 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .project-toggle {
+        width: 36px;
+        height: 36px;
+        font-size: 1.1rem;
+        top: 0.8rem;
+        right: 0.8rem;
+    }
+    
+    .project-title-section {
+        padding: 1rem 1.5rem 0.5rem 1.5rem;
+    }
+    
+    .project-title-section h3 {
+        font-size: 1.2rem;
+    }
+    
+    .project-card.collapsed .project-title-section {
+        padding: 0.6rem 1.5rem;
+    }
+    
+    .project-card.collapsed .project-title-section h3 {
+        font-size: 1rem;
+    }
+}
+
+/* Small Mobile Responsive */
+@media (max-width: 480px) {
+    .project-toggle {
+        width: 32px;
+        height: 32px;
+        font-size: 1rem;
+        top: 0.6rem;
+        right: 0.6rem;
+    }
+    
+    .project-title-section {
+        padding: 0.8rem 1rem 0.4rem 1rem;
+    }
+    
+    .project-title-section h3 {
+        font-size: 1.1rem;
+    }
+    
+    .project-card.collapsed .project-title-section {
+        padding: 0.5rem 1rem;
+    }
+    
+    .project-card.collapsed .project-title-section h3 {
+        font-size: 0.95rem;
+    }
 }

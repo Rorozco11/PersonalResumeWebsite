@@ -111,6 +111,36 @@
 
     <!-- #region Calling Scripts -->
     <script src="Scripts/cursorScript.js"></script>
+    
+    <!-- Project Dropdown Script -->
+    <script>
+        function toggleProject(projectCard) {
+            const isCollapsed = projectCard.classList.contains('collapsed');
+            const toggleIcon = projectCard.querySelector('.project-toggle i');
+            
+            if (isCollapsed) {
+                // Expand the card
+                projectCard.classList.remove('collapsed');
+                projectCard.classList.add('expanded');
+                toggleIcon.style.transform = 'rotate(180deg)';
+            } else {
+                // Collapse the card
+                projectCard.classList.remove('expanded');
+                projectCard.classList.add('collapsed');
+                toggleIcon.style.transform = 'rotate(0deg)';
+            }
+        }
+        
+        // Initialize all project cards as collapsed
+        document.addEventListener('DOMContentLoaded', function() {
+            const projectCards = document.querySelectorAll('.project-card');
+            projectCards.forEach(card => {
+                if (!card.classList.contains('expanded')) {
+                    card.classList.add('collapsed');
+                }
+            });
+        });
+    </script>
 
     <!-- #endregion -->
 
@@ -427,7 +457,10 @@
 
             <div class="projects-grid">
                  <!-- Creek's Edge Landscape Project -->
-                 <div class="project-card">
+                 <div class="project-card collapsed" onclick="toggleProject(this)">
+                    <div class="project-toggle">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
                     <div class="project-image-container">
                         <div class="project-image">
                             <div class="project-preview landscape-preview">
@@ -457,8 +490,11 @@
                         </div>
                     </div>
                     
+                    <div class="project-title-section">
+                        <h3>Creek's Edge Landscape</h3>
+                    </div>
+                    
                     <div class="project-content">
-                        <h3 class="project-title">Creek's Edge Landscape</h3>
                         <p class="project-description">
                             A professional landscape architecture website showcasing sustainable 
                             New England landscape design with modern web technologies.
@@ -488,7 +524,10 @@
                 </div>
 
                 <!-- Nail X Lauren Project -->
-                <div class="project-card featured">
+                <div class="project-card featured collapsed" onclick="toggleProject(this)">
+                    <div class="project-toggle">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
                     <div class="project-image-container">
                         <div class="project-image">
                             <div class="project-preview nails-preview">
@@ -518,8 +557,11 @@
                         </div>
                     </div>
                     
+                    <div class="project-title-section">
+                        <h3>Nail X Lauren</h3>
+                    </div>
+                    
                     <div class="project-content">
-                        <h3 class="project-title">Nail X Lauren</h3>
                         <p class="project-description">
                             Designed and built a responsive booking site for Nail X Lauren, taking the project 
                             from Figma mock-ups to live deployment with real-time form processing and data persistence.
@@ -575,7 +617,10 @@
                 </div>
 
                 <!-- Everest Golf Course Project -->
-                <div class="project-card">
+                <div class="project-card collapsed" onclick="toggleProject(this)">
+                    <div class="project-toggle">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
                     <div class="project-image-container">
                         <div class="project-image">
                             <div class="project-preview golf-preview">
@@ -605,8 +650,11 @@
                         </div>
                     </div>
                     
+                    <div class="project-title-section">
+                        <h3>Everest Golf Course</h3>
+                    </div>
+                    
                     <div class="project-content">
-                        <h3 class="project-title">Everest Golf Course</h3>
                         <p class="project-description">
                             Designed and built a responsive booking web app for Everest Golf Course with 
                             complete user authentication, payment processing, and real-time tee time management.
