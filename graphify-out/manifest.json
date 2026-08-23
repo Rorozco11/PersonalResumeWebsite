@@ -1,0 +1,188 @@
+{
+  ".vscode/settings.json": {
+    "mtime": 1757282883.6940014,
+    "seen": 1787514151.19779,
+    "ast_hash": "97da721fe2180efa57a5a1fa5c51b8e8",
+    "semantic_hash": "97da721fe2180efa57a5a1fa5c51b8e8"
+  },
+  "Scripts/cursorScript.js": {
+    "mtime": 1757282883.7029788,
+    "seen": 1787514151.197794,
+    "ast_hash": "4f6a769b6037013b5b94de17f3563928",
+    "semantic_hash": "4f6a769b6037013b5b94de17f3563928"
+  },
+  "Scripts/navbarScript.js": {
+    "mtime": 1757282883.7037928,
+    "seen": 1787514151.197796,
+    "ast_hash": "41187c515de24eca12c0442fb8ac61ac",
+    "semantic_hash": "41187c515de24eca12c0442fb8ac61ac"
+  },
+  "README.md": {
+    "mtime": 1757282883.7021494,
+    "seen": 1787514151.197797,
+    "ast_hash": "d64b68b5b6778050be7c3421bec392df",
+    "semantic_hash": "d64b68b5b6778050be7c3421bec392df"
+  },
+  "index.html": {
+    "mtime": 1760451158.8230054,
+    "seen": 1787514151.197799,
+    "ast_hash": "a0de3761440696ea64c94ad7d52390d0",
+    "semantic_hash": "a0de3761440696ea64c94ad7d52390d0"
+  },
+  "Images/AWS.jpeg": {
+    "mtime": 1728871264.8139408,
+    "seen": 1787514151.1978009,
+    "ast_hash": "afd6e7822ff2d4faa7c9d5e00edaad35",
+    "semantic_hash": "afd6e7822ff2d4faa7c9d5e00edaad35"
+  },
+  "Images/AboutMeCropped.jpg": {
+    "mtime": 1728871264.8179362,
+    "seen": 1787514151.197803,
+    "ast_hash": "c11fa222cb15dae96bfb8aead00e9cdf",
+    "semantic_hash": "c11fa222cb15dae96bfb8aead00e9cdf"
+  },
+  "Images/BHMt.gif": {
+    "mtime": 1728871264.820764,
+    "seen": 1787514151.197804,
+    "ast_hash": "320ec191d60a2994200da32c401206a7",
+    "semantic_hash": "320ec191d60a2994200da32c401206a7"
+  },
+  "Images/BetterRes.jpg": {
+    "mtime": 1757282883.6973286,
+    "seen": 1787514151.1978061,
+    "ast_hash": "95cd8d2411369d151b2d3b9846aa0b6b",
+    "semantic_hash": "95cd8d2411369d151b2d3b9846aa0b6b"
+  },
+  "Images/F35.jpg": {
+    "mtime": 1728871264.8217916,
+    "seen": 1787514151.197808,
+    "ast_hash": "7be79c1c6cfe2666a495c6212e566806",
+    "semantic_hash": "7be79c1c6cfe2666a495c6212e566806"
+  },
+  "Images/J4o.gif": {
+    "mtime": 1728871264.8359978,
+    "seen": 1787514151.197809,
+    "ast_hash": "881563d6444b370fa4ceea0c3183bb4c",
+    "semantic_hash": "881563d6444b370fa4ceea0c3183bb4c"
+  },
+  "Images/LMCOlogo.png": {
+    "mtime": 1728871264.8366582,
+    "seen": 1787514151.197812,
+    "ast_hash": "7913c7f77ce1abd127be40832171aee4",
+    "semantic_hash": "7913c7f77ce1abd127be40832171aee4"
+  },
+  "Images/TFSQ.gif": {
+    "mtime": 1728871264.8532403,
+    "seen": 1787514151.197813,
+    "ast_hash": "208f26740e41f572738776c72c2c457d",
+    "semantic_hash": "208f26740e41f572738776c72c2c457d"
+  },
+  "Images/Trial.jpeg": {
+    "mtime": 1728871264.8566136,
+    "seen": 1787514151.197815,
+    "ast_hash": "123b319d6b4aa50fb20677ceb987a670",
+    "semantic_hash": "123b319d6b4aa50fb20677ceb987a670"
+  },
+  "Images/UFC.png": {
+    "mtime": 1728871264.857318,
+    "seen": 1787514151.197817,
+    "ast_hash": "486ff97a22a4795aef1a7d3295db27dc",
+    "semantic_hash": "486ff97a22a4795aef1a7d3295db27dc"
+  },
+  "Images/UNHlogo.png": {
+    "mtime": 1728871264.8579714,
+    "seen": 1787514151.197818,
+    "ast_hash": "dde372816b30e8515e9bb7425fb58412",
+    "semantic_hash": "dde372816b30e8515e9bb7425fb58412"
+  },
+  "Images/UconnLogoPersonalWeb.jpeg": {
+    "mtime": 1728871264.8583796,
+    "seen": 1787514151.19782,
+    "ast_hash": "f39706c544f513570416c94cfa1d3b77",
+    "semantic_hash": "f39706c544f513570416c94cfa1d3b77"
+  },
+  "Images/Uconnweb.jpg": {
+    "mtime": 1728871264.8611026,
+    "seen": 1787514151.197821,
+    "ast_hash": "2875c3efc5ae2e7e92e95dbd26858bd4",
+    "semantic_hash": "2875c3efc5ae2e7e92e95dbd26858bd4"
+  },
+  "Images/Yankees.png": {
+    "mtime": 1728871264.8617492,
+    "seen": 1787514151.197823,
+    "ast_hash": "59d0b43d0066596fe54446b23e9cf137",
+    "semantic_hash": "59d0b43d0066596fe54446b23e9cf137"
+  },
+  "Images/actualLogo.jpeg": {
+    "mtime": 1757282883.6994662,
+    "seen": 1787514151.197824,
+    "ast_hash": "fe3a85104cdaa600e1f03b10f15f62ae",
+    "semantic_hash": "fe3a85104cdaa600e1f03b10f15f62ae"
+  },
+  "Images/boxing.png": {
+    "mtime": 1728871264.8621786,
+    "seen": 1787514151.1978261,
+    "ast_hash": "8e2d308d6172fb575a06b753fc24fe8d",
+    "semantic_hash": "8e2d308d6172fb575a06b753fc24fe8d"
+  },
+  "Images/briportfolio.png": {
+    "mtime": 1760450804.0645337,
+    "seen": 1787514151.197828,
+    "ast_hash": "cb02f63475fafbb691a9a7ae1534a685",
+    "semantic_hash": "cb02f63475fafbb691a9a7ae1534a685"
+  },
+  "Images/headerBackground.jpg": {
+    "mtime": 1728871264.8632543,
+    "seen": 1787514151.19783,
+    "ast_hash": "77ef25877ec63a42911a7e261ec153c3",
+    "semantic_hash": "77ef25877ec63a42911a7e261ec153c3"
+  },
+  "Images/mensoftball.png": {
+    "mtime": 1728871264.8637903,
+    "seen": 1787514151.197831,
+    "ast_hash": "444c382b9f769f544bd6481f9472cba5",
+    "semantic_hash": "444c382b9f769f544bd6481f9472cba5"
+  },
+  "Images/running.jpg": {
+    "mtime": 1728871264.8650105,
+    "seen": 1787514151.197833,
+    "ast_hash": "d1058bce4395c6c1b65609a7e2d1229f",
+    "semantic_hash": "d1058bce4395c6c1b65609a7e2d1229f"
+  },
+  "Images/sc1.jpg": {
+    "mtime": 1757282883.701396,
+    "seen": 1787514151.197834,
+    "ast_hash": "7c5a918984b373c23810f76794c5ce1c",
+    "semantic_hash": "7c5a918984b373c23810f76794c5ce1c"
+  },
+  "Images/tennis.jpg": {
+    "mtime": 1728871264.866058,
+    "seen": 1787514151.197836,
+    "ast_hash": "207aeee51afa0780567622a7cce08a57",
+    "semantic_hash": "207aeee51afa0780567622a7cce08a57"
+  },
+  "Images/uconnbasketball.png": {
+    "mtime": 1728871264.8669732,
+    "seen": 1787514151.197837,
+    "ast_hash": "833d417c7a5553f948898f54936552e7",
+    "semantic_hash": "833d417c7a5553f948898f54936552e7"
+  },
+  "Styles/F35.jpg": {
+    "mtime": 1728871264.8714302,
+    "seen": 1787514151.197839,
+    "ast_hash": "7be79c1c6cfe2666a495c6212e566806",
+    "semantic_hash": "7be79c1c6cfe2666a495c6212e566806"
+  },
+  "Styles/Uconnweb.jpg": {
+    "mtime": 1728871264.8744938,
+    "seen": 1787514151.197841,
+    "ast_hash": "2875c3efc5ae2e7e92e95dbd26858bd4",
+    "semantic_hash": "2875c3efc5ae2e7e92e95dbd26858bd4"
+  },
+  "Images/whoosh.mp3": {
+    "mtime": 1728871264.8687081,
+    "seen": 1787514151.1978428,
+    "ast_hash": "39f0e30e7ed1cfcdd5efd90c51fb5008",
+    "semantic_hash": "39f0e30e7ed1cfcdd5efd90c51fb5008"
+  }
+}
