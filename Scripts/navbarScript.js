@@ -86,17 +86,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Navbar background change on scroll
-    function updateNavbarBackground() {
-        if (window.scrollY > 50) {
-            navbar.style.background = 'linear-gradient(135deg, rgba(15, 15, 35, 0.95) 0%, rgba(26, 26, 46, 0.95) 50%, rgba(22, 33, 62, 0.95) 100%)';
-            navbar.style.backdropFilter = 'blur(20px)';
-        } else {
-            navbar.style.background = 'linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%)';
-            navbar.style.backdropFilter = 'blur(10px)';
-        }
-    }
-
     // Smooth scrolling for navigation links
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
@@ -117,10 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Event listeners
-    window.addEventListener('scroll', function() {
-        updateActiveNavLink();
-        updateNavbarBackground();
-    });
+    window.addEventListener('scroll', updateActiveNavLink);
 
     // Initialize active state
     updateActiveNavLink();

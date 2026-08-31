@@ -14,14 +14,14 @@ function typeWriter() {
 
     // Type the name first
     if (nameIndex < nameText.length) {
-        nameElement.innerHTML = nameText.substring(0, nameIndex + 1) + '<span class="cursor">|</span>';
+        nameElement.innerHTML = nameText.substring(0, nameIndex + 1) + '<span class="cursor"></span>';
         nameIndex++;
         setTimeout(typeWriter, typingSpeed);
     }
     // After the name is fully typed, type the title
     else if (titleIndex < titleText.length) {
         nameElement.innerHTML = nameText; // Remove cursor from the name
-        titleElement.innerHTML = titleText.substring(0, titleIndex + 1) + '<span class="cursor">|</span>';
+        titleElement.innerHTML = titleText.substring(0, titleIndex + 1) + '<span class="cursor"></span>';
         titleIndex++;
         setTimeout(typeWriter, typingSpeed);
     }
@@ -66,39 +66,6 @@ function typeWriter() {
             });
         }
     }
-}
-
-// Enhanced particle animation
-function animateParticles() {
-    const particles = document.querySelectorAll('.particle');
-    particles.forEach((particle, index) => {
-        // Add random movement to particles
-        const randomX = (Math.random() - 0.5) * 100;
-        const randomY = (Math.random() - 0.5) * 100;
-        
-        particle.style.transform = `translate(${randomX}px, ${randomY}px)`;
-        
-        // Restart animation after delay
-        setTimeout(() => {
-            particle.style.transform = 'translate(0, 0)';
-        }, 6000 + (index * 1000));
-    });
-}
-
-// Parallax effect for background elements
-function parallaxEffect() {
-    const scrolled = window.pageYOffset;
-    const techGrid = document.querySelector('.tech-grid');
-    const particles = document.querySelectorAll('.particle');
-    
-    if (techGrid) {
-        techGrid.style.transform = `translateY(${scrolled * 0.1}px)`;
-    }
-    
-    particles.forEach((particle, index) => {
-        const speed = 0.05 + (index * 0.01);
-        particle.style.transform = `translateY(${scrolled * speed}px)`;
-    });
 }
 
 // Enhanced scroll animations
@@ -195,11 +162,7 @@ window.addEventListener('DOMContentLoaded', function() {
     // Start typing effect
     typeWriter();
     
-    // Initialize animations
-    setTimeout(animateParticles, 1000);
-    
     // Add event listeners
-    window.addEventListener('scroll', parallaxEffect);
     window.addEventListener('scroll', handleScrollAnimations);
     
     // Initialize interactive elements
